@@ -44,7 +44,7 @@ The MIT License is a permissive open-source license that allows a wide range of 
 
 For the full text of the MIT License, please see the [LICENSE](LICENSE) file.
 
-## Invoice Generator
+## Nishant -Invoice Generator
 - Overview
 
 This Invoice Generator is a simple yet powerful tool designed to streamline the process of creating professional invoices for your business. Whether you're a freelancer, small business owner, or service provider, this application provides a user-friendly interface to generate invoices quickly and efficiently.
