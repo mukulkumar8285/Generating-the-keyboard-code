@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall layout and styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Invoice header */
+.invoice-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0074D9;
+    color: #fff;
+}
+
+/* Bill sections (Bill To and Bill From) */
+.bill-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.bill-to,
+.bill-from {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Itemized list table */
+.item-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.item-list th,
+.item-list td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Total section */
+.total-section {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Review Invoice button */
+.review-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Notes section */
+.notes {
+    padding: 20px;
+    background-color: #fff;
+}
+
+input {
+    padding: 10px;
+    height: 40px;
+}
+
+h4 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+#itemForm {
+    margin-bottom: 20px;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 20%;
+    font-weight: bold;
+}
+
+.putdown {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 25%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    box-shadow: #333;
+}
+
+#invoiceItems {
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+    /* padding-right: 30%;
+    padding-left: 30%; */
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.removeButton {
+    background-color: #f44336;
+}
+
+#totalPrice {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.dnld {
+    display: flex;
+    justify-content: center;
+}

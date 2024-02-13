@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Invoice Generator</title>
+    </head>
+
+    <body>
+        <div id="all">
+            <div class="invoice-header">
+                <h1>Invoice</h1>
+            </div>
+            <h4 id="dateDisplay"></h4>
+            <div class="bill-section">
+                <div class="bill-to">
+                    <h2>Bill To:</h2>
+                    <br>
+                    <input type="text" placeholder="Who is this invoice to?" size="60px">
+                    <br>
+                    <input type="text" placeholder="Email Address" size="60px">
+                    <br>
+                    <input type="text" placeholder="Billing Address" size="60px">
+                </div>
+
+                <!-- Bill From section -->
+                <div class="bill-from">
+                    <h2>Bill From:</h2>
+                    <br>
+                    <input type="text" placeholder="Who is this invoice from?" size="60px">
+                    <br>
+                    <input type="text" placeholder="Email Address" size="60px">
+                    <br>
+                    <input type="text" placeholder="Billing Address" size="60px">
+                </div>
+            </div>
+            <br>
+            <div id="itemForm">
+                <label for="itemName">Item Name:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="itemQuantity">Quantity:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="itemPrice">Price:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label>Action:</label>
+
+            </div>
+            <div class="putdown">
+                <input type="text" id="itemName" placeholder="Enter item name" size="40">
+                <input type="number" id="itemQuantity" placeholder="Enter quantity">
+                <input type="number" id="itemPrice" placeholder="Enter price">
+                <button id="removeButton" onclick="addItem()">Add Item</button>
+            </div>
+
+            <div id="invoiceItems">
+                <!-- Items will be dynamically added here -->
+            </div>
+
+            <div id="totalPrice">
+                <strong>Total Price: $<span id="totalAmount">0.00</span></strong>
+            </div>
+
+            <div class="dnld">
+                <button id="downloadBtn" onclick="downloadBill()">Download Invoice</button>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/datepickerjs"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
+            <script src="script.js"></script>
+        </div>
+    </body>
+
+</html>
