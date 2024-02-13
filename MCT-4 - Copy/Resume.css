@@ -1,0 +1,130 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+input {
+    width: 100%;
+}
+
+.information {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    width: 900px;
+    height: auto;
+    border: 2px solid black;
+    margin: auto;
+}
+
+#Company_Name,
+#Work_Information,
+#Work_Information1,
+#Job_Year {
+    width: 318.612px;
+    display: flex;
+}
+
+#Part_1 {
+    width: 35%;
+    background-color: #323B4C;
+    
+
+}
+
+
+.Resume {
+    width: 22cm;
+    min-height: 29.7cm;
+    margin: auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    margin-bottom: 50px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+
+}
+
+#img_main {
+
+    margin: auto;
+    text-align: center;
+}
+#Image-Block{
+    text-align: center;
+    height: 200px;
+    padding: 20px;
+}
+
+/* #Personal-Information p {
+    margin-bottom: 10px;
+} */
+#Personal-Information{
+    padding-left: 20px;
+    padding-right: 5px;
+
+}
+
+#Person-Name {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#Part_2 {
+    width: 68%;
+    padding: 20px;
+}
+
+#Namep {
+    font-size: 54px;
+}
+
+#Person_Summaryp {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#Heading{
+    font-size: 30px;
+
+}
+
+button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: lawngreen;
+    font-weight: 900;
+
+}
+.Divide_Col{
+    width: 30%;
+}
+#Personal_Information_My{
+    height: 550px;
+}
+/* styles.css */
+#Download {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#Main_Id{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+#Button{
+    margin: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+#Skils_Css, #Language_Css{
+    margin-top: 5px;
+}
+
+

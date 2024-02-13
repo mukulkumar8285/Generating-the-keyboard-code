@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Resume.css">
+    <script src="./Resume.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="information" style="text-transform: uppercase;">
+        <div class="Divide_Col">
+
+            <h1 id="Main_Id">Personal Details</h1>
+            <div id="Input_Text">
+                <label for="Name" style="font-weight: 900;">Name: </label>
+                <input type="text" id="Name" style="text-transform: uppercase;" />
+            </div>
+            <div id="Input_Text">
+                <label for="Email" style="font-weight: 900;">Email: </label>
+                <input type="text" id="Email" />
+            </div>
+            <div id="Input_Text">
+                <label for="Phone" style="font-weight: 900;">Phone: </label>
+                <input type="text" id="Phone" style="text-transform: uppercase;" />
+            </div>
+            <label for="Address" style="font-weight: 900;">Address:</label>
+            <div id="Input_Text width">
+                <textarea name="Address" id="Address" cols="41" rows="10"></textarea>
+
+            </div>
+            <div id="Input_Text">
+                <label for="Name" style="font-weight: 900;">Country: </label>
+                <input type="text" id="Country" style="text-transform: uppercase;" />
+            </div>
+            <div id="Education" style="margin-top:10px; ">
+                <u style="font-weight: 900;">Education</u><br>
+                <label for="text">Passing Year</label>
+                <input type="text" id="Passing_Year">
+                <label>Enter Your Degree</label>
+                <input type="text" id="degree_Name" />
+                <label for="Collage">University/College/School</label>
+                <input type="text" id="Collage_Name" style="text-transform: uppercase;" />
+                <button class="Education_Button" onclick="Show_Info()">+Education</button>
+            </div>
+
+            <div id="Education2" style="display: none; margin-top:10px;">
+                <u style="font-weight: 900;">Education1</u><br>
+                <label for="text">Passing Year</label>
+                <input type="text" id="Passing_Year2">
+                <label>Enter Your Degree</label>
+                <input type="text" id="degree_Name2" />
+                <label for="Collage">University/College/School</label>
+                <input type="text" id="Collage_Name2" style="text-transform: uppercase;" />
+                <button class="Education_Button2" onclick="Show_Info1()">+Education</button>
+            </div>
+
+
+
+            <div id="Education3" style="display: none; margin-top:10px;">
+                <u style="font-weight: 900;">Education2</u><br>
+                <label for="text">Passing Year</label>
+                <input type="text" id="Passing_Year">
+                <label>Enter Your Degree</label>
+                <input type="text" id="degree_Name" />
+                <label for="Collage">University/College/School</label>
+                <input type="text" id="Collage_Name" style="text-transform: uppercase;" />
+                <button class="Education_Button">No_More</button>
+            </div>
+            <div id="Skills_Div">
+                <label for="Skills">Skills</label>
+                <input type="text" id="Skills" style="text-transform: uppercase;" />
+                <button id="Add_Skills" onclick="Add_Skills()">+Add Skills</button>
+            </div>
+            <div id="Skills_Div2" style="display: none;">
+                <label for="Skills">Skills_1</label>
+                <input type="text" id="Skills_1" style="text-transform: uppercase;" />
+                <button id="Add_Skills1" onclick="Add_Skills1()">+Add Skills</button>
+            </div>
+
+            <div id="Skills_Div3" style="display: none;">
+                <label for="Skills">Skills_2</label>
+                <input type="text" id="Skills_2" style="text-transform: uppercase;" />
+                <button id="Add_Skills2" onclick="Add_Skills2()">+Add Skills</button>
+            </div>
+            <div id="Skills_Div4" style="display: none;">
+                <label for="Skills">Skills_3</label>
+                <input type="text" id="Skills_3" style="text-transform: uppercase;" />
+                <button id="Add_Skills3" onclick="Add_Skills3()">+Add Skills</button>
+            </div>
+
+            <div id="Skills_Div5" style="display: none;">
+                <label for="Skills">Skills_4</label>
+                <input type="text" id="Skills_4" style="text-transform: uppercase;" />
+                <button id="Add_Skills3" onclick="Add_Skills4()">No_More</button>
+            </div>
+
+            <div id="Language1">
+                <label for="skills" style="font-weight: 900;">Language</label>
+                <input type="text" id="Languages">
+                <button id="Language_Button" onclick="choose_language()">+Language</button>
+            </div>
+            <div id="Language" style="display: none;">
+                <label for="skills" style="font-weight: 900;">Language_1</label>
+                <input type="text" id="Languages_1">
+                <button id="Language_Button_1" onclick="choose_language_1()">+Language</button>
+            </div>
+            <div id="Language2" style="display: none;">
+                <label for="skills" style="font-weight: 900;">Language_2</label>
+                <input type="text" id="Languages_2">
+                <button id="Language_Button_2" onclick="choose_language_2()">+Language</button>
+            </div>
+            <div id="Language3" style="display: none;">
+                <label for="skills" style="font-weight: 900;">Language_3</label>
+                <input type="text" id="Languages_3">
+                <button id="Language_Button_3" onclick="choose_language_3()">No_More</button>
+            </div>
+        </div>
+        <div class="Divide_Col">
+            <h1 id="Main_Id">Professional Details</h1>
+
+            <label for="Summary" style="font-weight: 900;">Objective</label>
+            <div id="Summary">
+                <textarea name="Summary" id="Person_Summary" cols="41" rows="10"
+                    style="text-transform: capitalize;"></textarea>
+            </div>
+
+            <div id="Work_Experience">
+                <label for="Year" style="font-weight: 900;">Year</label>
+                <input type="Text" id="Job_Year" />
+                <label for="Company_Name" style="font-weight: 900;">Company Name</label>
+                <input type="text" id="Company_Name">
+
+                <label for="Job position here" style="font-weight: 900;">Job position & work description</label>
+                <br>
+                <!-- <input type="text" id="Work_Information"> -->
+                <textarea id="Work_Information" rows="5px" cols="47px" style="padding:2px"></textarea>
+                <br>
+                <button id="Information_Button" onclick="Add_Job()">+Add</button>
+            </div>
+            <div id="Work_Experience_1" style="display: none;">
+                <label for="Year" style="font-weight: 900;">Year</label>
+                <input type="text" id="Job_Year_1" />
+                <label for="Company_Name" style="font-weight: 900;">Company Name</label>
+                <input type="text" id="Company_Name_1">
+
+                <label for="Job position here" style="font-weight: 900;">Job position & work description</label>
+                <br>
+                <!-- <input type="text" id="Work_Information"> -->
+                <textarea id="Work_Information_1" rows="5px" cols="47px" style="padding:2px"></textarea>
+                <br>
+                <button id="Information_Button_1" onclick="Add_Job()">No_More</button>
+            </div>
+            <div id="Reference">
+                <label for="Reference" style="font-weight: 900;">Additional</label><br>
+                <label for="name">Heading</label>
+                <input type="text" id="Reference_name">
+                <label for="position">Details</label><br>
+                <textarea id="position" cols="48px" rows="5px"></textarea>
+                <!-- <label for="Reference_Phone">Phone</label>
+                <input type="text" id="Reference_Phone" />
+                <label for="Reference_Email">Email</label>
+                <input type="text" id="Reference_Email" /> -->
+            </div>
+            <br>
+            <div id="Image_Pick">
+                <!-- <label for="Select">Choose Image</label>
+                <input type="file" id="Select_Image"> -->
+                <input type="file" id="Select_Image" accept="image/*">
+                <img id="Selected_Image" src="#" alt="Selected Image" style="max-width: 300px; display: none;">
+            </div>
+            <div id="button">
+                <button onclick="Submit_Data()">Submit</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Divide Into Two Part -->
+<section id="Section_part_2" style="display: none;text-transform: capitalize;">
+    <!-- <div id="Button">
+        <button style="padding: 10px; background-color:yellow "
+            onclick="BackGround_color_Orange()">Change_Background</button>
+        <button style="padding: 10px; background-color:yellow " onclick="Text_color_Orange()">Text_Color</button>
+        <button style="padding: 10px; background-color:yellow "
+            onclick="BackGround_color_Orange_2()">Change_Background_Part_2</button>
+        <button style="padding: 10px; background-color:yellow "
+            onclick="Text_color_Orange_2()">Change_Background_Part_2</button>
+
+    </div> -->
+
+    <div id="Button">
+        <label for="backgroundPicker">Background Color_Part_1 :-</label>
+        <input style="width: 50px;" type="color" id="backgroundPicker" onchange="changeBackgroundColor(this.value)">
+        <label for="backgroundPicker">Background Color_Part_2 :-</label>
+        <input style="width: 50px;" type="color" id="backgroundPicker" onchange="changeBackgroundColor_1(this.value)">
+        
+        <label for="textColorPicker">Text Color_Part_1 :-</label>
+        <input style="width: 50px;" type="color" id="textColorPicker" onchange="changeTextColor(this.value)">
+        <label for="textColorPicker">Text Color_Part_2 :-</label>
+        <input style="width: 50px;" type="color" id="textColorPicker" onchange="changeTextColor_1(this.value)">
+    </div>
+    
+    <div class="Resume" style="display: flex;">
+        <div id="Part_1" style="color: white; border:1px solid black;">
+            <div id="Image-Block">
+                <img src="./my_profime.jpg" width="150px" style="border-radius: 50%;" alt="Pls Wait" id="img_main">
+            </div>
+
+            <div id="Personal-Information">
+                <h1 id="Heading">Contact</h1>
+                <hr>
+                <br>
+                <u style="font-weight: 900;">Email</u>
+                <p id="Emailp" style="padding-bottom: 5px;">Mukulved07@gmail.com</p>
+                <u style="font-weight: 900;">Phone</u>
+                <p id="Phonep" style="padding-bottom: 5px;">8285xxxxx21</p>
+                <u style="font-weight: 900;">Address</u>
+                <p id="Addressp" style="padding-bottom: 10px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt molestiae nisi in
+                    ducimus voluptatum harum officia placeat.</p>
+                <u style="font-weight: 900;">COUNTRY</u>
+                <p id="Countryp">India</p>
+                <h1 id="Heading" style="margin-top: 10px;">Education</h1>
+                <hr>
+                <p id="Passing_Yearp">2018</p>
+                <p id="degree_Namep">Bachelor of Computer Application</p>
+                <p id="Collage_Namep">Aravali Collage Of Engineering</p>
+                <p id="Passing_Yearp2">2018</p>
+                <p id="degree_Namep2">Bachelor of Computer Application</p>
+                <p id="Collage_Namep2">Aravali Collage Of Engineering</p>
+                <div>
+                    <h1 id="Heading" style="margin-top: 10px;">Expertise</h1>
+                    <hr>
+                    <ul id="Skils_Css" style="list-style-type: square; list-style-position: inside;">
+                        <li id="Skillsp">c++</li>
+                        <li id="Skillsp1">Java</li>
+                        <li id="Skillsp2">Dsa</li>
+                        <li id="Skillsp3">Pyhon</li>
+                        <li id="Skillsp4">JavaScript</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 id="Heading" style="margin-top: 10px;">Language</h1>
+                    <hr style="margin-bottom: 10px;">
+                    <ul id="Language_Css"  style="list-style-type: square; list-style-position: inside; " >
+                        <li  id="Languagep">ENGLISH</li>
+                        <li  id="Languagep2">HINDI</li>
+                        <li  id="Languagep3">SANSKRITI</li>
+                        <li id="Languagep4">English</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="Part_2" style="color: rgb(115, 115, 115);">
+            <div id="Work_Informationp">
+                <div id="Width_Information" style="height:900px;">
+                    <div id="Person-Name">
+                        <h1  id="Namep" >Mukul Kumar</h1>
+                    </div>
+
+                    <p id="Person_Summaryp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reiciendis
+                        eligendi magni, hic magnam ut quos possimus, quia optio officiis fugiat tempora. Cupiditate
+                        rerum
+                        ratione suscipit impedit molestias consequuntur provident non tenetur eligendi commodi, dolores
+                        quisquam maiores corrupti odio quae ipsa, ducimus omnis quam ut sint mollitia? Quae, voluptate
+                        totam.</p>
+
+                    <h1 id="Heading" >Experience</h1>
+                    <hr>
+                    <div id="Personal_Information_My" style="padding: 10px;">
+                        <h3 id="Job_Yearp">2021-2022</h3>
+                        <h3 id="Company_Namep">EAZY ERP PVT. LTD.</h3>
+                        <!-- <h4>Job position here</h4> -->
+                        <p id="Input_Work">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in
+                            lorem
+                            at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu elementum. In elementum
+                            elit at dui tristique feugiat. Mauris convallis, mi at mattis malesuada, neque nulla
+                            volutpat
+                            dolor, hendrerit faucibus eros nibh ut nunc. Proin luctus urna id nunc sagittis dignissim.
+                            Sed
+                            in libero sed libero dictum dapibus. Vivamus fermentum est eget lorem aliquet, vel tempus
+                            metus
+                            dignissim. Donec risus arcu, tristique et sollicitudin blandit, iaculis ut nisl. Integer
+                            rutrum
+                            ultricies fringilla.</p>
+                        <br>
+                        <!-- <hr> -->
+
+                        <h3 id="Job_Yearp_1">2021-2022</h3>
+                        <h3 id="Company_Namep_1">EAZY ERP PVT. LTD.</h3>
+                        <!-- <h4>Job position here</h4> -->
+                        <p id="Input_Work_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in
+                            lorem
+                            at laoreet. Donec hendrerit libero eget est tempor, quis tempus arcu elementum. In elementum
+                            elit at dui tristique feugiat. Mauris convallis, mi at mattis malesuada, neque nulla
+                            volutpat
+                            dolor, hendrerit faucibus eros nibh ut nunc. Proin luctus urna id nunc sagittis dignissim.
+                            Sed
+                            in libero sed libero dictum dapibus. Vivamus fermentum est eget lorem aliquet, vel tempus
+                            metus
+                            dignissim. Donec risus arcu, tristique et sollicitudin blandit, iaculis ut nisl. Integer
+                            rutrum
+                            ultricies fringilla.</p>
+
+                    </div>
+
+                </div>
+                <div style="padding: 10px;">
+                    <h1 id="Reference_namep">Additional</h1>
+                    <!-- <h1 id="Reference" style="color: black;">Reference</h1> -->
+                    <!-- <hr> -->
+
+                    <p id="positionp"> Orchestrated successful implementation and administration of ERP software at MDH (Indore) Company,
+                        optimizing internal processes.</p>
+                    <!-- <label for="text" style="font-weight: 900;">Phone</label> -->
+                    <!-- <p id="Reference_Phonep">123-456-7890</p> -->
+                    <!-- <label style="font-weight: 900;">Email</label>
+                <p id="Reference_Emailp">Mukulved07@gmail.com</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <!-- Add a print button -->
+    <button  onclick="printResume()">Print Resume</button>
+</footer>
+
+<script>
+    // JavaScript function to print the resume
+    function printResume() {
+        // Store original contents of the body
+        var originalContents = document.body.innerHTML;
+        
+        // Get the HTML content of the container to print
+        var printContents = document.querySelector('.Resume').innerHTML;
+        
+        // Replace the body content with the content of the container to print
+        document.body.innerHTML = printContents;
+        
+        // Trigger the browser's print dialog
+        window.print();
+        
+        // Restore original contents of the body
+        document.body.innerHTML = originalContents;
+        
+        // Toggle the display of the button
+       // var button = document.getElementById("Button");
+        //if (button.style.display === 'none') {
+        //    button.style.display = 'block';
+        //} else {
+          //  button.style.display = 'none';
+        //}
+    }
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+
+<body>
+    <input type="file" id="Select_Image" accept="image/*">
+    <img id="Selected_Image" src="#" alt="Selected Image" style="max-width: 300px; display: none;">
+    
+    <script>
+        // Get references to the file input and image elements
+        const selectImageInput = document.getElementById('Select_Image');
+        const selectedImageElement = document.getElementById('Selected_Image');
+
+        // Add an event listener to the file input
+        selectImageInput.addEventListener('change', function() {
+            // Check if a file is selected
+            if (selectImageInput.files && selectImageInput.files[0]) {
+                // Get the selected file
+                const selectedFile = selectImageInput.files[0];
+                
+                // Create a FileReader object to read the selected file
+                const reader = new FileReader();
+
+                // Set up the FileReader to display the image once loaded
+                reader.onload = function(e) {
+                    // Set the source of the image element to the data URL of the selected file
+                    selectedImageElement.src = e.target.result;
+                    // Make the image element visible
+                    selectedImageElement.style.display = 'block';
+                };
+
+                // Read the selected file as a data URL
+                reader.readAsDataURL(selectedFile);
+            }
+        });
+    </script>
+</body>
+
+</html>
